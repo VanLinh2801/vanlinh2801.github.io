@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nguyen Van Linh - CV</title>
     <style>
-        /* Reset and base styles */
         * {
             margin: 0;
             padding: 0;
@@ -143,31 +143,60 @@
             position: absolute;
             left: 0;
         }
+        .contact {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        #text {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+        }
+
+        #sendBtn {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        #sendBtn:hover {
+            background-color: #3498db;
+        }
 
         /* Responsive styles */
         @media (max-width: 600px) {
             .header {
                 padding: 20px;
             }
-            
+
             .content {
                 padding: 20px;
             }
-            
+
             .name {
                 font-size: 1.8rem;
             }
-            
+
             .title {
                 font-size: 1.1rem;
             }
-            
+
             .personal-info {
                 grid-template-columns: 1fr;
             }
         }
 
-        /* Footer */
         .footer {
             text-align: center;
             padding: 15px;
@@ -177,6 +206,7 @@
         }
     </style>
 </head>
+
 <body>
     <div class="resume-container">
         <!-- Header Section -->
@@ -201,7 +231,7 @@
                 <div>
                     <div class="info-item">
                         <span class="info-label">Email:</span>
-                        <span>vanlinh280104@gmail.com</span>
+                        <span><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="e294838c8e8b8c8ad0dad2d3d2d6a2858f838b8ecc818d8f">[email&#160;protected]</a></span>
                     </div>
                     <div class="info-item">
                         <span class="info-label">Address:</span>
@@ -217,9 +247,14 @@
             <div class="section">
                 <h2 class="section-title">Objective</h2>
                 <div class="objective-text">
-                    <p><strong>Short-term Goal:</strong> Aiming to build a strong foundation in Machine Learning and Deep Learning and improve AI programming skills. Aspiring to contribute to relevant tasks while continuously enhancing personal expertise in the field.</p>
+                    <p><strong>Short-term Goal:</strong> Aiming to build a strong foundation in Machine Learning and
+                        Deep Learning and improve AI programming skills. Aspiring to contribute to relevant tasks while
+                        continuously enhancing personal expertise in the field.</p>
                     <br>
-                    <p><strong>Long-term Goal:</strong> Desiring to become a skilled AI engineer, specializing in developing efficient and scalable machine learning models to solve real-world problems. Eager to possess a leadership role in a tech company, driving innovative projects and mentoring future developers.</p>
+                    <p><strong>Long-term Goal:</strong> Desiring to become a skilled AI engineer, specializing in
+                        developing efficient and scalable machine learning models to solve real-world problems. Eager to
+                        possess a leadership role in a tech company, driving innovative projects and mentoring future
+                        developers.</p>
                 </div>
             </div>
 
@@ -278,10 +313,18 @@
             </div>
         </div>
 
+        <div class="section">
+            <h2 class="section-title">Contact me</h2>
+            <div class="contact">
+                <textarea placeholder="Your message" id="text" rows="4"></textarea>
+                <button id="sendBtn">Send</button>
+            </div>
+        </div>
         <!-- Footer -->
         <div class="footer">
             © 2025 Nguyen Van Linh - CV
         </div>
     </div>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="index.js"></script>
 </body>
 </html>
